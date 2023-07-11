@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:id="@+id/navbar"
+    android:background="@drawable/nav"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_150sdp">
+    <RelativeLayout
+        android:id="@+id/nozel"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nozel"
+            android:textSize="@dimen/_30ssp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/_20sdp"/>
+
+        <Button
+            android:id="@+id/btnprofil"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/akun"
+            app:backgroundTint="@color/white"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_15sdp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/nozel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:id="@+id/koin"
+        android:background="@drawable/coin"
+     android:layout_marginLeft="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_15sdp">
+        <ImageView
+            android:id="@+id/duit"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@drawable/koin"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_15sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rp. 1.000.000"
+            android:layout_toRightOf="@+id/duit"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_5sdp"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_marginRight="@dimen/_15sdp"
+      android:layout_toRightOf="@id/koin"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:id="@+id/tarik"
+        android:background="@drawable/coin"
+        android:layout_marginTop="@dimen/_15sdp">
+        <Button
+            android:id="@+id/trk"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:drawableTint="@color/pink"
+
+            android:background="@drawable/tarik"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_2sdp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tarik"
+            android:layout_toRightOf="@+id/trk"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            android:layout_marginLeft="@dimen/_1sdp"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>
+
+<TextView
+    android:id="@+id/teks"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/_15ssp"
+    android:textStyle="bold"
+    android:layout_marginLeft="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:text="Cerita Pilihan Untuk Kamu"
+    android:layout_below="@id/navbar"
+    />
+    <HorizontalScrollView
+        android:id="@+id/scrol1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@id/teks"
+        android:layout_marginTop="@dimen/_3sdp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+<!--            iklan1-->
+   <RelativeLayout
+       android:layout_width="@dimen/_70sdp"
+       android:layout_height="@dimen/_100sdp"
+       android:id="@+id/iklan1"
+       >
+       <ImageView
+           android:layout_width="@dimen/_70sdp"
+           android:layout_height="@dimen/_100sdp"
+           android:src="@drawable/img"/>
+
+   </RelativeLayout>
+<!--            iklan2-->
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan2"
+                android:layout_toRightOf="@id/iklan1"
+               >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_1"/>
+
+            </RelativeLayout>
+<!--            iklan3-->
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan3"
+                android:layout_toRightOf="@id/iklan2"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_2"/>
+            </RelativeLayout>
+
+
+
+<!--                iklan4-->
+                <RelativeLayout
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:id="@+id/iklan4"
+                    android:layout_toRightOf="@id/iklan3"
+                    >
+                    <ImageView
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:src="@drawable/img_3"/>
+                </RelativeLayout>
+<!--                    iklan5-->
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_100sdp"
+                        android:id="@+id/iklan5"
+                        android:layout_toRightOf="@id/iklan4"
+                        >
+                        <ImageView
+                            android:layout_width="@dimen/_70sdp"
+                            android:layout_height="@dimen/_100sdp"
+                            android:src="@drawable/img_4"/>
+
+                    </RelativeLayout>
+<!--            iklan6-->
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan6"
+                android:layout_toRightOf="@id/iklan5"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_5"/>
+            </RelativeLayout>
+<!--            iklan7-->
+
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan7"
+                android:layout_toRightOf="@id/iklan6"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_6"/>
+
+            </RelativeLayout>
+<!--            iklan8-->
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan8"
+                android:layout_toRightOf="@id/iklan7"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_7"/>
+
+            </RelativeLayout>
+<!--            iklan9-->
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan9"
+                android:layout_toRightOf="@id/iklan8"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_8"/>
+
+            </RelativeLayout>
+<!--            iklan10-->
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan10"
+                android:layout_toRightOf="@id/iklan9"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_9"/>
+
+            </RelativeLayout>
+<!--            iklan11-->
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan11"
+                android:layout_toRightOf="@id/iklan10"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_11"/>
+
+
+            </RelativeLayout>
+<!--            iklan12-->
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan12"
+                android:layout_toRightOf="@id/iklan11"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_12"/>
+
+            </RelativeLayout>
+
+            <!--            ///////-->
+</RelativeLayout>
+    </HorizontalScrollView>
+    <TextView
+        android:id="@+id/teks2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Baru Saja di Baca"
+        android:layout_below="@id/scrol1"
+        />
+    <HorizontalScrollView
+        android:id="@+id/scrol2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_below="@id/teks2"
+        android:layout_marginTop="@dimen/_5sdp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--            iklan1-->
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan_1"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img"/>
+
+            </RelativeLayout>
+            <!--            iklan2-->
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan_2"
+                android:layout_toRightOf="@id/iklan_1"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_1"/>
+
+            </RelativeLayout>
+            <!--            iklan3-->
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan_3"
+                android:layout_toRightOf="@id/iklan_2"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_2"/>
+            </RelativeLayout>
+
+
+
+            <!--                iklan4-->
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan_4"
+                android:layout_toRightOf="@id/iklan_3"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_3"/>
+            </RelativeLayout>
+            <!--                    iklan5-->
+
+            <RelativeLayout
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:id="@+id/iklan_5"
+                android:layout_toRightOf="@id/iklan_4"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/img_4"/>
+
+            </RelativeLayout>
+
+
+
+
+            <!--            ///////-->
+        </RelativeLayout>
+    </HorizontalScrollView>
+<!--    baru rilis-->
+    <TextView
+        android:id="@+id/teks3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_15ssp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="Baru Rilis"
+        android:layout_below="@id/scrol2"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:layout_below="@id/teks3"
+        android:id="@+id/baru1"
+        >
+        <RelativeLayout
+            android:id="@+id/rilis"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/img_11"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+        android:id="@+id/sinopsis"
+            android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/rilis"
+        android:layout_height="match_parent">
+     <TextView
+         android:id="@+id/t1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Hujan"
+         android:textSize="@dimen/_15ssp"
+         android:textStyle="bold"
+       />  <TextView
+           android:layout_below="@+id/t1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pada 2042, dunia telah memasuki era di mana peran manusia telah digantikan oleh ilmu pengeahuan dan teknologi canggih. Cerita berfokus pada karakter Lail, gadis berusia 13 tahun, yang pada hari pertamanya di sekolah harus mengalami bencana gunung meletus dan gempa dahsyat."
+            android:textSize="@dimen/_13ssp"
+
+            />
+
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+<!--    .................-->
+</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

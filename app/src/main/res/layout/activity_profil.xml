@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_profil">
+    <LinearLayout
+        android:id="@+id/kepala"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+android:gravity="center_horizontal"
+        android:background="@color/pink"
+        android:padding="0dp"
+        tools:ignore="MissingConstraints">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_15ssp"
+            android:id="@+id/ly1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+    <ImageView
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:background="@drawable/foto" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vra Widia Putri"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_13ssp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_15ssp"
+            android:background="@drawable/verify"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+<!--                kotak kotak-->
+
+                <RelativeLayout
+                    android:background="@drawable/kotak_share"
+                    android:layout_marginTop="@dimen/_10ssp"
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:layout_height="@dimen/_70sdp">
+                    <RelativeLayout
+                        android:id="@+id/ic1"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ig" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/ic1"
+                        android:id="@+id/ic2"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/fb" />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_toRightOf="@id/ic2"
+                        android:id="@+id/ic3"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:layout_width="@dimen/_50sdp"
+                            android:layout_height="@dimen/_50sdp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/tiktok" />
+                    </RelativeLayout>
+                </RelativeLayout>
+<!--                pertama-->
+                <RelativeLayout
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/gakun"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/akun"
+                        android:tint="@color/pink"
+ android:layout_marginBottom="@dimen/_15sdp"/>
+                    <TextView
+
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/gakun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/email"
+                        android:textSize="@dimen/_15ssp"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ghp"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/hp"
+                          android:tint="@color/pink"
+ android:layout_marginBottom="@dimen/_15sdp"/>
+
+                    <TextView
+
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/ghp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+6282210992034"
+                         android:textSize="@dimen/_15ssp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/grumah"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/rumah"
+                          android:tint="@color/pink"
+ android:layout_marginBottom="@dimen/_15sdp"/>
+
+                    <TextView
+
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/grumah"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sijunjung"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/gkalender"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/kalender"
+                          android:tint="@color/pink"
+ android:layout_marginBottom="@dimen/_15sdp"/>
+
+                    <TextView
+
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/gkalender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="06 Mei 2001"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/gemail"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/email"
+                          android:tint="@color/pink"
+ android:layout_marginBottom="@dimen/_15sdp"/>
+
+                    <TextView
+
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/gemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Vrawidiaputri@gmail.com"
+                        android:textSize="@dimen/_15ssp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="@dimen/_300sdp"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ggender"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:src="@drawable/gender"
+                          android:tint="@color/pink"
+ android:layout_marginBottom="@dimen/_15sdp"/>
+
+                    <TextView
+                        android:layout_marginTop="@dimen/_10ssp"
+                        android:layout_marginLeft="@dimen/_10sdp"
+                        android:layout_toRightOf="@+id/ggender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Perempuan"
+                        android:textSize="@dimen/_15ssp"/>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Nozel</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="email">@vrawidia06</string>
+</resources>

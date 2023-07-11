@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_cari"
+        android:icon="@drawable/cari"
+        android:title="Cari" />
+    <item
+        android:id="@+id/navigation_perpus"
+        android:icon="@drawable/perpus"
+        android:title="Perpus" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/notif"
+        android:title="@string/title_notifications" />
+
+</menu>
