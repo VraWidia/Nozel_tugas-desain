@@ -49,12 +49,14 @@ class MainActivity : AppCompatActivity() {
                 val s = pref(this)
                 if (s.getISlogin()) {
                     Log.d("TAG", "SUDAH LOGIN")
+                    // Navigasi ke halaman navigation_akun
+                    navController.navigate(R.id.navigation_notifications)
+                    true
                 } else {
-                    //startActivity(Intent(this,LoginActivity::class.java))
                     startActivity(Intent(this, ActivityLogin::class.java))
-                    Log.d("TAG", "Belum Login pindah ke hal login")
+                    Log.d("TAG", "Belum Login, pindah ke halaman login")
+                    false
                 }
-                true
             } else {
                 Log.d("TAG", "onCreate yg Lain" + item.itemId)
                 navController.navigate(item.itemId)
@@ -67,10 +69,21 @@ class MainActivity : AppCompatActivity() {
 
 
         // Dalam fungsi onCreate() aktivitas yang sudah ada:
-        val button = findViewById<Button>(R.id.btnprofil) // Temukan tombol yang ingin digunakan
+//        val button = findViewById<Button>(R.id.btnprofil) // Temukan tombol yang ingin digunakan
+//        button.setOnClickListener {
+//            val intent = Intent(this, Activity_akun::class.java)
+//            startActivity(intent)
+//        }
+        val button = findViewById<Button>(R.id.btnprofil)
         button.setOnClickListener {
-            val intent = Intent(this, Activity_akun::class.java)
-            startActivity(intent)
+            val s = pref(this)
+            if (s.getISlogin()) {
+                // Jika sudah login, langsung navigasi ke ActivityKuotaCall
+                startActivity(Intent(this, Activity_akun::class.java))
+            } else {
+                // Jika belum login, pindah ke halaman login terlebih dahulu
+                startActivity(Intent(this, ActivityLogin::class.java))
+            }
         }
 
 

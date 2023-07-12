@@ -13,7 +13,7 @@ class pref(activity: Activity) {
         sp = activity.getSharedPreferences("Mypref", Context.MODE_PRIVATE)
     }
 
-    fun setIsLogin(value: Boolean) {
+    fun setISlogin(value: Boolean) {
         sp!!.edit().putBoolean(login, value).apply()
     }
 

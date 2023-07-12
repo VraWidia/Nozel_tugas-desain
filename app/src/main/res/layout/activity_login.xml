@@ -43,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
+            android:id="@+id/login"
             android:textColor="@android:color/white"
             android:background="@drawable/kotak_share"
             android:layout_marginTop="24dp"/>
