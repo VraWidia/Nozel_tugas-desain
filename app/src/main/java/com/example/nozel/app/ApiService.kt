@@ -1,7 +1,7 @@
-package com.example.Nozel.app
+package com.example.nozel.app
 
-import com.example.Nozel.model.RiwayatModel
-import com.example.Nozel.model.ResponseModel
+import com.example.nozel.model.RiwayatModel
+import com.example.nozel.model.ResponseModel
 
 
 import retrofit2.Call

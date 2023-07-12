@@ -1,4 +1,4 @@
-package com.example.Nozel.adapter
+package com.example.nozel.adapter
 import android.annotation. SuppressLint
 import android.app.Activity
 import android.content.Context
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.Nozel.model.RiwayatModel
+import com.example.nozel.model.RiwayatModel
 
 
 import com.example.nozel.R

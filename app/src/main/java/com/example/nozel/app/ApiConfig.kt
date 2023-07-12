@@ -1,7 +1,7 @@
-package com.example.Nozel.app.ApiConfig
+package com.example.nozel.app.ApiConfig
 
-import com.example.Nozel.app.ApiService
-import com.example.Nozel.util.Config
+import com.example.nozel.app.ApiService
+import com.example.nozel.util.Config
 import com.google.gson.GsonBuilder
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

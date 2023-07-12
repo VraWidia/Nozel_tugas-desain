@@ -1,4 +1,4 @@
-package com.example.Nozel.ui.Cari
+package com.example.nozel.ui.cari
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,17 +8,16 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.Nozel.adapter.adapterriwayat
-
-
-import com.example.Nozel.app.ApiConfig.ApiConfig
-import com.example.Nozel.model.RiwayatModel
-import com.example.Nozel.model.ResponseModel
+import com.example.nozel.app.ApiConfig.ApiConfig
+import com.example.nozel.model.ResponseModel
+import com.example.nozel.model.RiwayatModel
+import com.example.nozel.adapter.adapterriwayat
 import com.example.nozel.R
+
 import retrofit2.Call
 import retrofit2.Response
 
-class CariFragment: Fragment() {
+class CariFragment : Fragment() {
 
     //
     lateinit var rvRiwayat: RecyclerView
@@ -61,7 +60,7 @@ class CariFragment: Fragment() {
     }
 
     fun init(view: View) {
-        //rvBarang = view.findViewById(R.id.recyler_view)
+        //rvRiwayat = view.findViewById(R.id.recyler_view)
         rvRiwayat=view.findViewById(R.id.recyler_view)
     }
 

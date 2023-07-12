@@ -1,6 +1,6 @@
-package com.example.Nozel.model
+package com.example.nozel.model
 
-import com.example.Nozel.model.RiwayatModel
+import com.example.nozel.model.RiwayatModel
 
 class ResponseModel {
     var riwayat:ArrayList<RiwayatModel> = ArrayList()

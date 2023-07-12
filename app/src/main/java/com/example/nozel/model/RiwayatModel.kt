@@ -1,4 +1,4 @@
-package com.example.Nozel.model
+package com.example.nozel.model
 
 class RiwayatModel {
     var id =0

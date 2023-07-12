@@ -21,7 +21,7 @@ class Activity_akun : AppCompatActivity() {
         }
         val klikme=findViewById<Button>(R.id.klikme )
         klikme.setOnClickListener {
-            Toast.makeText( this,"Hai There, i'm using Nozel", Toast.LENGTH_SHORT).show()
+            Toast.makeText( this,"Hai There, i'm using nozel", Toast.LENGTH_SHORT).show()
         }
     }
 
