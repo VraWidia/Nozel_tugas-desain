@@ -74,15 +74,15 @@ class MainActivity : AppCompatActivity() {
 //            val intent = Intent(this, Activity_akun::class.java)
 //            startActivity(intent)
 //        }
-        val button = findViewById<Button>(R.id.btnprofil)
+        val button = findViewById<Button>(resources.getIdentifier("btnprofil", "id", packageName))
         button.setOnClickListener {
-            val s = pref(this)
-            if (s.getISlogin()) {
-                // Jika sudah login, langsung navigasi ke ActivityKuotaCall
-                startActivity(Intent(this, Activity_akun::class.java))
+            val sharedPreferences = pref(this)
+            if (sharedPreferences.getISlogin()) {
+                val intent = Intent(this, Activity_akun::class.java)
+                startActivity(intent)
             } else {
-                // Jika belum login, pindah ke halaman login terlebih dahulu
-                startActivity(Intent(this, ActivityLogin::class.java))
+                val intent = Intent(this, ActivityLogin::class.java)
+                startActivity(intent)
             }
         }
 
